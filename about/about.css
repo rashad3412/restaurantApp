@@ -14,14 +14,15 @@
   display: flex;
   justify-content: center;
   gap: 5em;
-  border: solid black 1px;
+  /* border: solid black 1px; */
   font-family: "Roboto", sans-serif;
 }
 
 #about-img {
   display: flex;
   justify-content: center;
-  border: solid black 1px;
+  border: solid white 1px;
+  box-shadow: 2px 2px 10px #bc5818;
   border-radius: 10px;
   width: 622px;
   height: 415px;
@@ -40,6 +41,6 @@
 #about-content {
   margin: auto 0;
   padding: 10px;
-  border: solid black 1px;
+  /* border: solid black 1px; */
   width: 25%;
 }

@@ -3,6 +3,12 @@
   margin: 0;
 }
 
+body {
+  background-color: #dbc0a5;
+  color: #5d775c;
+  font-weight: 800;
+}
+
 header {
   width: 100%;
   display: flex;
@@ -10,7 +16,7 @@ header {
   align-items: center;
   position: fixed;
   top: 0;
-  background-color: black;
+  background-color: #5d775c;
   color: white;
   border: solid white 1px;
   z-index: 1;
@@ -20,7 +26,6 @@ header {
 #logo {
   box-sizing: border-box;
   position: relative;
-  border: solid black 1px;
   left: 10%;
   padding: 10px;
   overflow: hidden;
