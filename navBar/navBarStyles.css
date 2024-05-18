@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  color: white;
+  border: solid white 1px;
+  z-index: 1;
+  font-family: "Montserrat", sans-serif;
+}
+
+#logo {
+  box-sizing: border-box;
+  position: relative;
+  border: solid black 1px;
+  left: 10%;
+  padding: 10px;
+  overflow: hidden;
+}
+
+nav {
+  position: relative;
+  right: 10%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  width: 550px;
+  border: solid white 1p x;
+}
