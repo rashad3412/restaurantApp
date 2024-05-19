@@ -25,4 +25,5 @@
   border-radius: 5px;
   box-shadow: 2px 2px 10px #bc5818;
   overflow: hidden;
+  cursor: pointer;
 }

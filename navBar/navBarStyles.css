@@ -21,6 +21,7 @@ header {
   border: solid white 1px;
   z-index: 1;
   font-family: "Montserrat", sans-serif;
+  cursor: pointer;
 }
 
 #logo {
@@ -44,4 +45,8 @@ ul {
   list-style: none;
   width: 550px;
   border: solid white 1p x;
+}
+
+ul :hover {
+  color: #dbc0a5;
 }
