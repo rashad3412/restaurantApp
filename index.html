@@ -33,24 +33,26 @@
 
     <title>MeezVibezz</title>
   </head>
-  <body>
+  <body id="body">
     <header>
-      <div id="logo">
-        <span>M</span>
-        <span>V</span>
+      <div class="logo">
+        <a href="#body"><span>M</span></a>
+        <a href="#body"><span>V</span></a>
       </div>
       <nav>
         <ul>
-          <li><a href=""></a>About</li>
-          <li><a href=""></a>Menu</li>
-          <li><a href=""></a>Visit us</li>
-          <li><a href=""></a>Contact us</li>
+          <li class="nav-link"><a href="#about">About</a></li>
+          <li class="nav-link"><a href="#menu">Menu</a></li>
+          <li class="nav-link"><a href="#visit-us">Visit us</a></li>
+          <li class="nav-link"><a href=""></a>Contact us</li>
         </ul>
       </nav>
     </header>
-    <img src="Images/headerImg.jpg" alt="BarImg" id="barImg" />
-    <h1 id="about-h1">About</h1>
-    <section id="about-section">
+    <section>
+      <img src="Images/headerImg.jpg" alt="BarImg" id="barImg" />
+    </section>
+    <h1 class="about-h1" id="about">About</h1>
+    <section class="about-section">
       <div id="about-img"><img src="Images/aboutImg.jpg" alt="aboutImg" /></div>
       <div id="about-content">
         <div class="about-name">
@@ -68,18 +70,32 @@
         natus eius distinctio!
       </div>
     </section>
-    <h1 id="menu-h1">Menu</h1>
+
+    <h1 class="menu-h1" id="menu">Menu</h1>
     <section class="menu-section">
-      <div class="menu">
+      <div class="menu" id="breakfast">
         <img src="Images/breakfastImg.jpg" alt="" />
       </div>
-      <div class="menu"><img src="Images/lunchImg.jpg" alt="" /></div>
-      <div class="menu">
+      <div class="menu" id="lunch">
+        <img src="Images/lunchImg.jpg" alt="" />
+      </div>
+      <div class="menu" id="dinner">
         <img src="Images/dinnerImg.jpg" alt="" srcset="" />
       </div>
-      <div class="menu"><img src="Images/dessertImg.jpg" alt="" /></div>
+      <div class="menu" id="dessert">
+        <img src="Images/dessertImg.jpg" alt="" />
+      </div>
     </section>
-    <h1 id="info-h1">Visit us</h1>
+    <section class="center-div">
+      <section class="menu-1 hidden">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore commodi
+        sit ut molestiae deleniti nobis aut ipsum saepe, fugit excepturi ratione
+        corporis laboriosam aspernatur, deserunt dolore reprehenderit maxime
+        asperiores. Quam!
+      </section>
+      <div class="overlay hidden"></div>
+    </section>
+    <h1 class="info-h1" id="visit-us">Visit us</h1>
     <footer class="info-section">
       <div class="info-content">
         <h3>Socials</h3>
@@ -87,5 +103,6 @@
         <h3>Newsletter</h3>
       </div>
     </footer>
+    <script src="menu/menu.js"></script>
   </body>
 </html>

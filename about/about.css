@@ -1,4 +1,4 @@
-#about-h1 {
+.about-h1 {
   display: flex;
   justify-content: center;
   padding-top: 1em;
@@ -10,7 +10,7 @@
   letter-spacing: 5px;
 }
 
-#about-section {
+.about-section {
   display: flex;
   justify-content: center;
   gap: 5em;
@@ -43,4 +43,9 @@
   padding: 10px;
   /* border: solid black 1px; */
   width: 25%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
