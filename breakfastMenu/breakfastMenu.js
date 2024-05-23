@@ -5,7 +5,35 @@ const dinner = document.querySelector("#dinner");
 const dessert = document.querySelector("#dessert");
 const overlay = document.querySelector(".overlay");
 const breakfastElement = document.createElement("div");
-const breakfastElementPosition = document.createElement("div");
+
+const breakfastMenu = [
+  {
+    item: "Egg Sandwich",
+    price: 7.0,
+    description: "Toasted Bread, with Egg and Cheese",
+  },
+  {
+    item: "egg sandwich2",
+    price: 7.0,
+    description: "Toasted Bread, with Egg and Cheese",
+  },
+];
+
+const getBreakfastItem = () => {
+  breakfastElement.innerHTML += `
+  <h1>MeezVibez</h1>
+  <div id="break-obj">
+    <section>Title: ${breakfastMenu[0].item}
+    <span>
+    Price: ${breakfastMenu[0].price}
+    </span>
+    <div>
+    Description: ${breakfastMenu[0].description}
+    </div>
+    </section>
+    <div><strong>Title:</strong> ${breakfastMenu[1].item}</div>
+    </div>`;
+};
 
 const openModal = () => {
   overlay.classList.remove("hidden");
@@ -13,6 +41,7 @@ const openModal = () => {
 
 const closeModal = () => {
   overlay.classList.add("hidden");
+  breakfastElement.remove();
 };
 
 for (let i = 0; i < menu.length; i++) {
@@ -23,14 +52,6 @@ for (let i = 0; i < menu.length; i++) {
     overlay.classList.remove("hidden");
   };
 }
-
-// const breakfastMenu = [
-//   {
-//     item: "egg sandwich",
-//     price: 7.0,
-//     description: "Toasted Bread, with Egg and Cheese",
-//   },
-// ];
 
 const breakfastMenuOpenModal = () => {
   breakfast.addEventListener("click", () => openModal);
@@ -43,21 +64,11 @@ const breakfastMenuCloseModal = () => {
 const breakfastMenuDisplay = () => {
   breakfast.addEventListener("click", () => {
     breakfast.after(breakfastElement);
-    breakfastElement.style.width = "500px";
-    breakfastElement.style.height = "500px";
-    breakfastElement.style.border = "solid 1px white";
-    breakfastElement.style.backgroundClip = "white";
-    breakfastElement.style.zIndex = "2";
-    breakfastElement.style.position = "fixed";
-    breakfastElement.style.top = "150px";
-    breakfastElement.style.justifyContent = "center";
-    breakfastElement.appendChild(breakfastElementPosition);
-    breakfastElementPosition.style.display = "flex";
-    breakfastElementPosition.style.justifyContent = "center";
-    breakfastElementPosition.textContent = "hello world";
+    breakfastElement.setAttribute("id", "break-style");
   });
 };
 
 breakfastMenuOpenModal();
 breakfastMenuCloseModal();
 breakfastMenuDisplay();
+getBreakfastItem();

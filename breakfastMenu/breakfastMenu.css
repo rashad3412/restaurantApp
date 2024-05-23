@@ -66,3 +66,21 @@
 .hidden {
   display: none;
 }
+
+#break-obj {
+  display: inline-block;
+  justify-content: center;
+  border: solid black 1px;
+  height: 100%;
+}
+
+#break-style {
+  width: 500px;
+  height: 500px;
+  border: solid 1px white;
+  background-color: white;
+  border-radius: 3px;
+  z-index: 2;
+  position: fixed;
+  top: 150px;
+}
