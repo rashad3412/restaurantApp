@@ -27,7 +27,7 @@ header {
   cursor: pointer;
 }
 
-.logo {
+logo {
   box-sizing: border-box;
   position: relative;
   left: 10%;
