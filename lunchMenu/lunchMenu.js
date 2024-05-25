@@ -1,10 +1,10 @@
-const menu = document.querySelectorAll(".menu");
-const breakfast = document.querySelector("#breakfast");
-const overlay = document.querySelector(".overlay");
-const breakfastElement = document.createElement("div");
+const lucnhmenu = document.querySelectorAll(".menu");
+const b = document.querySelector("#lunch");
+const o = document.querySelector(".overlay");
+const bElement = document.createElement("div");
 
 // Breakfast Menu
-const breakfastMenu = [
+const bMenu = [
   {
     item: "Eggs Sandwich",
     price: 12,
@@ -29,39 +29,39 @@ const breakfastMenu = [
 ];
 
 // Overlay for each menu Item
-const menuChoices = () => {
-  for (let i = 0; i < menu.length; i++) {
-    menu[i].onclick = function (e) {
+const lunchMenuChoices = () => {
+  for (let i = 0; i < lucnhmenu.length; i++) {
+    lucnhmenu[i].onclick = function (e) {
       e.preventDefault();
-      menu[i] = document.querySelector(e.target.getAttribute("href"));
-      menu[i].classList.remove("hidden");
-      overlay.classList.remove("hidden");
+      lucnhmenu[i] = document.querySelector(e.target.getAttribute("href"));
+      lucnhmenu[i].classList.remove("hidden");
+      o.classList.remove("hidden");
     };
   }
 };
 
 // overlay for modal to close display
-const closeOverlay = () => {
-  overlay.classList.add("hidden");
-  breakfastElement.remove();
+const closeLunchOverlay = () => {
+  o.classList.add("hidden");
+  bElement.remove();
 };
 
 // Create an div element after breakfast Id in html has been selected set that div id to 'break-style'
 // Check Css is for styling of break style
-const breakfastMenuDisplay = () => {
-  breakfast.addEventListener("click", () => {
-    breakfast.after(breakfastElement);
-    breakfastElement.setAttribute("id", "break-style");
+const lunchMenuDisplay = () => {
+  b.addEventListener("click", () => {
+    b.after(bElement);
+    bElement.setAttribute("id", "break-style");
   });
 };
 
-const breakfastMenuCloseModal = () => {
-  overlay.addEventListener("click", closeOverlay);
+const lunchMenuCloseModal = () => {
+  o.addEventListener("click", closeLunchOverlay);
 };
 
 // Using innerHtml to render breakfast menu from objects on page
-const getBreakfastItem = () => {
-  breakfastElement.innerHTML += `
+const getluchItem = () => {
+  bElement.innerHTML += `
 
   <div id="center-pic">
 
@@ -75,35 +75,35 @@ const getBreakfastItem = () => {
     <div>
       <section>
         <div>
-          <div id="break-style"> ${breakfastMenu[0].item}
+          <div id="break-style"> ${bMenu[0].item}
         <span class="break-span">
-          Price: $${breakfastMenu[0].price}
+          Price: $${bMenu[0].price}
         </span>
         <div class="description">
-           ${breakfastMenu[0].description}
+           ${bMenu[0].description}
         </div>
-          <div id="break-style2" > ${breakfastMenu[1].item}
+          <div id="break-style2" > ${bMenu[1].item}
         <span class="break-span">
-          Price: $${breakfastMenu[1].price}
+          Price: $${bMenu[1].price}
         </span>
         <div class="description">
-           ${breakfastMenu[1].description}
+           ${bMenu[1].description}
         </div>
         </div>
-          <div id="break-style2" > ${breakfastMenu[2].item}
+          <div id="break-style2" > ${bMenu[2].item}
         <span class="break-span">
-          Price: $${breakfastMenu[2].price}
+          Price: $${bMenu[2].price}
         </span>
         <div class="description">
-            ${breakfastMenu[2].description}
+            ${bMenu[2].description}
         </div>
         </div>
-          <div id="break-style2" > ${breakfastMenu[3].item}
+          <div id="break-style2" > ${bMenu[3].item}
         <span class="break-span">
-          Price: $${breakfastMenu[3].price}
+          Price: $${bMenu[3].price}
         </span>
         <div class="description">
-          ${breakfastMenu[3].description}
+          ${bMenu[3].description}
         </div>
       </section>
       </div>
@@ -112,7 +112,8 @@ const getBreakfastItem = () => {
     `;
 };
 
-breakfastMenuCloseModal();
-breakfastMenuDisplay();
-getBreakfastItem();
-menuChoices();
+closeLunchOverlay();
+lunchMenuCloseModal();
+lunchMenuDisplay();
+getluchItem();
+// lunchMenuChoices();

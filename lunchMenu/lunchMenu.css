@@ -1,0 +1,141 @@
+.menu-h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+  font-weight: 400;
+  font-size: 3em;
+  text-decoration: underline solid 2px;
+  margin-bottom: 25px;
+  font-family: "Kalam", cursive;
+  letter-spacing: 5px;
+}
+
+.menu-section {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  width: 225px;
+  height: 500px;
+  border: solid white 1px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #bc5818;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.center-div {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.menu-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: absolute;
+  bottom: 300px;
+  border-radius: 15px;
+  background-color: white;
+  position: relative;
+  border: solid black 1px;
+  z-index: 2;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+#center-pic {
+  left: 0;
+  margin: auto;
+  position: absolute;
+  left: 15px;
+  opacity: 0.2;
+  mix-blend-mode: multiply;
+}
+
+#menu-pic {
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  mix-blend-mode: multiply;
+}
+
+#break-style {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100 bold;
+  font-size: 17px;
+  width: 700px;
+  height: 700px;
+  background-color: rgb(246, 229, 212);
+  border-radius: 3px;
+  z-index: 2;
+  position: fixed;
+  top: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px #bc5818;
+  text-align: center;
+}
+
+#break-h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline;
+}
+
+#break-h3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  margin: 5px;
+  font-family: "Kalam", cursive;
+}
+#break-style2 {
+  padding-top: 25px;
+}
+.break-span {
+  padding-left: 100px;
+}
+
+.description {
+  padding-top: 15px;
+  background-color: #5d775c;
+  color: #f37045;
+  mix-blend-mode: multiply;
+  padding: 5px;
+  text-align: center;
+  font-weight: bolder;
+  border: solid 3px black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #e9d4c6;
+}
+
+#break-obj {
+  border: solid black 1px;
+}
