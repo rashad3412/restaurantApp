@@ -26,6 +26,11 @@ const breakfastMenu = [
     price: 14,
     description: "Eggs, bacon, diced potatoes, with salsa.",
   },
+  {
+    item: "Breakfast Pannini",
+    price: 12,
+    description: "Toasted bread, sliced meat, eggs, garlic sauce.",
+  },
 ];
 
 // Overlay for each menu Item
@@ -75,7 +80,7 @@ const getBreakfastItem = () => {
     <div>
       <section>
         <div>
-          <div id="break-style"> ${breakfastMenu[0].item}
+          <div id="modal-style"> ${breakfastMenu[0].item}
         <span class="break-span">
           Price: $${breakfastMenu[0].price}
         </span>
@@ -104,6 +109,14 @@ const getBreakfastItem = () => {
         </span>
         <div class="description">
           ${breakfastMenu[3].description}
+        </div>
+        </div>
+          <div id="break-style2" > ${breakfastMenu[4].item}
+        <span class="break-span">
+          Price: $${breakfastMenu[4].price}
+        </span>
+        <div class="description">
+          ${breakfastMenu[4].description}
         </div>
       </section>
       </div>

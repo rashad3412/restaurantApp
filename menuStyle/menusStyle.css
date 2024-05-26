@@ -28,7 +28,7 @@
   cursor: pointer;
 }
 
-.center-div {
+.center-menu {
   display: flex;
   justify-content: center;
   position: relative;
