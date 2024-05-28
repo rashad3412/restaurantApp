@@ -3,7 +3,7 @@ const lunch = document.querySelector("#lunch");
 const lunchOverlay = document.querySelector(".overlay");
 const lunchElement = document.createElement("div");
 
-// Breakfast Menu
+//  Menu
 const lunchMenu = [
   {
     item: "Salmon Salad",
@@ -51,7 +51,7 @@ const closeLunchOverlay = () => {
   lunchElement.remove();
 };
 
-// Create an div element after breakfast Id in html has been selected set that div id to 'break-style'
+// Create an div element after  Id in html has been selected set that div id to 'break-style'
 // Check Css is for styling of break style
 const lunchMenuDisplay = () => {
   lunch.addEventListener("click", () => {
@@ -64,7 +64,7 @@ const lunchMenuCloseModal = () => {
   lunchOverlay.addEventListener("click", closeLunchOverlay);
 };
 
-// Using innerHtml to render breakfast menu from objects on page
+// Using innerHtml to render menu from objects on page
 const getlunchItem = () => {
   lunchElement.innerHTML += `
 
